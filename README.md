@@ -110,7 +110,9 @@ character-set-server=utf8
 
 default-character-set=utf8
 
-![](/assets/qqq.png)
+![](/assets/jjj.png)
+
+
 
 查看编码
 
