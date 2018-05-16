@@ -96,7 +96,7 @@ cd /usr/local/mysql/bin
 
 重新加载权限
 
- ![](/assets/iii.png)
+![](/assets/iii.png)
 
 12、设置编码
 
@@ -108,7 +108,9 @@ character-set-server=utf8
 
 在\[client\]下边设置
 
-default-character-set=utf8![](/assets/jjj.png)查看编码
+default-character-set=utf8![](/assets/jjj.png)
+
+查看编码
 
 show variables like '%character%'
 
@@ -133,8 +135,4 @@ GRANT ALL PRIVILEGES ON \*.\* TO 'root'@'%' IDENTIFIED BY 'xxx' WITH GRANT OPTIO
 flush privileges;
 
 **2、Caused by: java.sql.SQLException: Access denied for user 'root'@'hdp1' \(using password: YES\)**
-
-
-
-
 
