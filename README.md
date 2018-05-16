@@ -108,7 +108,9 @@ character-set-server=utf8
 
 在\[client\]下边设置
 
-default-character-set=utf8![](/assets/jjj.png)
+default-character-set=utf8
+
+![](/assets/qqq.png)
 
 查看编码
 
