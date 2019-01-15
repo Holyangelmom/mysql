@@ -36,5 +36,5 @@ select \* from tm\_table\_info into outfile "/var/lib/mysql-files/test.sql" fiel
 
 4、查看function定义
 
-show create function functionName;
+show create function functionName;贝加尔胫腓骨
 
