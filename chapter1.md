@@ -1,12 +1,25 @@
 # 常用sql
 
+### 目录
+
+1. 创建用户
+2. 用户授权
+3. 回收权限
+4. 刷新权限
+5. 修改字段名
+6. 增加字段
+7. 查询用户权限
+8. 删除字段
+
+
+
 ### 1、创建用户
 
 _CREATE USER 'username'@'host' IDENTIFIED BY 'password';_
 
 host可选值：localhost、IP、%（远程任意主机）
 
-### 2、给用户授权
+### 2、用户授权
 
 _GRANT privileges ON databasename.tablename TO 'username'@'host';_
 
@@ -44,7 +57,7 @@ _show grants for username;_
 
 alter table t\_organization drop colName;
 
-### 9、查询某用户的权限
+### 
 
-show grants for username;
+
 
