@@ -1,26 +1,41 @@
 # 部署配置过程
 
-1、解压
+### 目录
+
+1. 解压
+2. 移动
+3. 添加mysql用户和组
+4. 修改文件夹权限
+5. 配置my.cnf
+6. 安装
+7. 配置开机启动
+8. 启动数据库
+9. 配置mysql软连接
+10. 设置root密码
+11. 消除安全隐患
+12. 设置编码
+
+### 1、解压
 
 tar -zxvf mysql-5.6.33-linux-glibc2.5-x86\_64.tar.gz
 
 ![](/assets/aaa.png)
 
-2、移动
+### 2、移动
 
 mv mysql-5.6.33-linux-glibc2.5-x86\_64 /usr/local/mysql
 
-3、添加mysql用户和组
+### 3、添加mysql用户和组
 
 groupadd mysql
 
 useradd -g mysql mysql
 
-4、修改文件夹权限
+### 4、修改文件夹权限
 
 chown -R mysql mysql /usr/local/mysql
 
-5、配置my.cnf
+### 5、配置my.cnf
 
 cd /usr/local/mysql
 
@@ -38,11 +53,11 @@ user=mysql 目录所属用户
 
 lower\_case\_table\_names=1 对大小写不敏感
 
-6、安装
+### 6、安装
 
 ./scripts/mysql\_install\_db --user=mysql --datadir=/usr/local/mysql/data
 
-7、配置开机启动
+### 7、配置开机启动
 
 cd /usr/local/mysql
 
@@ -56,19 +71,19 @@ chmod 755 /etc/init.d/mysqld
 
 ![](/assets/ccc.png)
 
-8、启动数据库
+### 8、启动数据库
 
 service mysqld start
 
-9、配置mysql软连接
+### 9、配置mysql软连接
 
 ln -s /usr/local/mysql/bin/mysql /usr/bin
 
-10、设置root密码
+### 10、设置root密码
 
 /usr/local/mysql/bin/mysqladmin -u root password 'new\_password'
 
-11、消除安全隐患
+### 11、消除安全隐患
 
 cd /usr/local/mysql/bin
 
@@ -98,7 +113,7 @@ cd /usr/local/mysql/bin
 
 ![](/assets/iii.png)
 
-12、设置编码
+### 12、设置编码
 
 vim /etc/my.cnf
 
@@ -111,8 +126,6 @@ character-set-server=utf8
 default-character-set=utf8
 
 ![](/assets/jjj.png)
-
-
 
 查看编码
 
