@@ -6,13 +6,15 @@
 
 解决方法：
 
-进入mysql命令行进行授权，允许root用户使用xxx密码通过远程主机访问：
+进入mysql命令行进行授权
 
-（GRANT ALL PRIVILEGES ON dk.\\* TO 'smyuser'@'192.168.1.3' contentIDENTIFIED andBY ideas'xxx' WITH GRANT OPTION;
+允许myuser用户使用xxx密码通过192.168.1.3主机访问：
 
-允许myuser用户使用xxx密码在192.168.1.3主机上登录访问dk数据库）
+GRANT ALL PRIVILEGES ON dk.\* TO 'myuser'@'192.168.1.3' IDENTIFIED BY 'xxx' WITH GRANT OPTION;
 
-GRANT ALL PRIVILEGES ON \_.\_ TO 'root'@'%' IDENTIFIED BY 'xxx' WITH GRANT OPTION;
+允许root用户使用xxx密码在任何远程主机上登录访问dk数据库
+
+GRANT ALL PRIVILEGES ON dk.\* TO 'root'@'%' IDENTIFIED BY 'xxx' WITH GRANT OPTION;
 
 flush privileges;
 
