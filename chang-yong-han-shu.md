@@ -14,5 +14,5 @@ IFNULL\(expr1,expr2\)
 
 ##### （2）使用样例
 
-ifnull\(max\(query\_id\)+1, 1\),
+select nvl\(max\(ele_id\)+1,1\) from oadb.t\__query
 
