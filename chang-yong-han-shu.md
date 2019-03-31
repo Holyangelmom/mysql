@@ -12,3 +12,7 @@ IFNULL\(expr1,expr2\)
 
 如果expr1不是NULL，IFNULL\(\)返回expr1，否则它返回expr2。IFNULL\(\)返回一个数字或字符串值
 
+（2）使用样例
+
+
+
