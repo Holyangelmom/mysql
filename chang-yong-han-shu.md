@@ -14,5 +14,5 @@ IFNULL\(expr1,expr2\)
 
 ##### （2）使用样例
 
-select ifnull\(max\(ele\_id\)+1,1\) from oadb.t\_\_query
+select ifnull\(max\(id\)+1,1\) from oadb.t\_\_query
 
